@@ -1,3 +1,4 @@
+
 //letter choices
 var computerChoices = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
@@ -8,7 +9,8 @@ var guessesLeft = 10;
 var guessedLetters = [];
 var letterToGuess = [];
 
-
+//start game
+reset();
 //update guesses left
 function updateGuessesLeft() {
 document.querySelector("#guessLeft").innerHTML = "Guesses left: " + guessesLeft;
@@ -64,3 +66,4 @@ document.onkeyup = function(event) {
             reset();
         }
 };
+
