@@ -49,7 +49,7 @@ document.onkeyup = function(event) {
   updateGuessesLeft();
   updateGuessesSoFar();
 
-        if (guessesLeft > 0){
+        if (guessesLeft >= 0){
             if (userGuess === letterToGuess){
                 wins++;
                 //update wins
