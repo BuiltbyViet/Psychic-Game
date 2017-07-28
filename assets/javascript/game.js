@@ -49,14 +49,14 @@ document.onkeyup = function(event) {
   updateGuessesLeft();
   updateGuessesSoFar();
 
-        if (guessesLeft >= 0){
+        
             if (userGuess === letterToGuess){
                 wins++;
                 //update wins
                 document.querySelector('#wins').innerHTML = "Wins: " + wins;
                 alert("You really are psychic!!!....or you're just lucky....");
                 reset();
-            }
+            
         }else if(guessesLeft == 0){
             losses++;
             // update loss
